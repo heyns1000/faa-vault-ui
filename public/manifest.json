@@ -1,0 +1,11 @@
+{
+  "omnidrop": true,
+  "activated_at": "2025-03-31T21:56:00Z",
+  "initiator": "Heyns/Samantha FAA",
+  "payload": {
+    "faa_zone": "https://faa.zone",
+    "vault_route": "/vault",
+    "meta_file": "/meta.json"
+  },
+  "status": "initialized"
+}
