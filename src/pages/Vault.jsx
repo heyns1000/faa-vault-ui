@@ -1,15 +1,27 @@
-import VaultGrid from '../components/VaultGrid';
-import Nav from '../components/Nav';
+import MetaCard from '../components/MetaCard';
+
+const dropData = [
+  {
+    title: "Treaty Drop Alpha",
+    description: "FAA Core: Initiate indigenous signal maps across domain pulse."
+  },
+  {
+    title: "Treaty Drop Beta",
+    description: "Genesis Treaty Linkage: Align capsule logic with Vault capsule API."
+  },
+  {
+    title: "Treaty Drop Gamma",
+    description: "Sovereign Glyph Fusion: Expand drop chain into deep interface memory."
+  }
+];
 
 const Vault = () => {
   return (
-    <>
-      <Nav />
-      <main className="bg-gray-900 text-white min-h-screen">
-        <h1 className="text-4xl p-8 font-bold">FAA Vault</h1>
-        <VaultGrid />
-      </main>
-    </>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+      {dropData.map((drop, index) => (
+        <MetaCard key={index} title={drop.title} description={drop.description} />
+      ))}
+    </div>
   );
 };
 

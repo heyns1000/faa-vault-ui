@@ -1,15 +1,8 @@
-const MetaCard = () => {
+const MetaCard = ({ title, description }) => {
   return (
-    <div className="max-w-xl mx-auto mt-12 bg-white text-black p-6 rounded-xl shadow-md">
-      <h2 className="text-2xl font-bold">FAA Meta Identity</h2>
-      <p className="mt-4 text-sm">
-        Sovereign protocol metadata loaded from HSOMNI9000 channel.
-      </p>
-      <ul className="mt-4 space-y-2">
-        <li><strong>Zone:</strong> FAA.ZONE</li>
-        <li><strong>Node ID:</strong> ROOT-001</li>
-        <li><strong>Vault Access:</strong> THRONE-VΛULT</li>
-      </ul>
+    <div className='bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-lg transition'>
+      <h3 className='text-xl font-bold mb-2 text-gray-900'>{title}</h3>
+      <p className='text-gray-700 text-sm'>{description}</p>
     </div>
   );
 };
