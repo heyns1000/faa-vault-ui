@@ -1,8 +1,16 @@
-export default function Vault() {
+import VaultGrid from '../components/VaultGrid';
+import Nav from '../components/Nav';
+
+const Vault = () => {
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-4xl font-bold">🔐 Vault Signal Logs</h1>
-      <p className="mt-4 text-lg">FAA threads + signal events will show here.</p>
-    </div>
+    <>
+      <Nav />
+      <main className="bg-gray-900 text-white min-h-screen">
+        <h1 className="text-4xl p-8 font-bold">FAA Vault</h1>
+        <VaultGrid />
+      </main>
+    </>
   );
-}
+};
+
+export default Vault;
